@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#E3F2FD">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="web browser 🌐"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#0D47A1"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="آدرس سایت را وارد کنید"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textUri"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="➕ افزودن"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✏️ ویرایش"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFC107"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🗑 حذف"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_button" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لیست سایت‌ها:"
+        android:textColor="#0D47A1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp" />
+
+    <ListView
+        android:id="@+id/listViewUrls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#9E9E9E"
+        android:dividerHeight="1dp"
+        android:background="#FFFFFF"
+        android:padding="5dp" />
+</LinearLayout>
